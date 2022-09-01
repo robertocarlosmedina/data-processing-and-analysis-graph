@@ -60,7 +60,7 @@ print(args["model"])
 
 for model in args["model"]:
     # opening all the json files
-    json_files = open(f'{model}.json')
+    json_files = open(f'./data/cleaned_data/{model}.json')
     # load all the data
     data = json.load(json_files)
 

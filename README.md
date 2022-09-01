@@ -1,15 +1,20 @@
+# Data Processing and Analysis with graph
+
+Clearing terminal output and generation graphs related to loss and accuracy training values of some models
+
 ## Como rodar
 
-Antes de executar os passos tenha certesa que as dependencias estão instaladas
+Before executing the steps make sure the dependencies are installed
 
 
-- Primeiro ordenar os dados por pastas;
-- Segundo rodar o clean_data.py para limpar os dados e os ordenar em formato json
+- First sort the data by masses;
+- Second run clean_data.py to clean the data and sort it in json format
     ```
-        python clean_dat.py
+        python clean_data.py
     ```
-- Terceiro rodar o graph_generator.py para gerar os gráficos relativo a um modelo fornecido
+- Third, run graph_generator.py to generate graphs relative to a specified model
     ```
         python graph_generator.py -m main_model
     ```
-    Isso ira gerar 3 gráficos para o mesmo modelo, um para a accuracy, um para o loss e outro para ambos os dois
+    This will generate 3 graphs for the same model, one for accuracy, one for loss and one for both.
+

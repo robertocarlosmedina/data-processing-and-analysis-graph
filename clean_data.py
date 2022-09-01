@@ -3,7 +3,7 @@ import os
 
 
 # Get the list of .txt files and directories that contein the training datas
-path = "./"
+path = "./data/mixed_data"
 dir_list = os.listdir(path)
 all_data_files = [item for item in dir_list if ".txt" in item]
 
@@ -11,7 +11,7 @@ all_data_files = [item for item in dir_list if ".txt" in item]
 for file_name in all_data_files:
 
     data_list = []
-    file = open(file_name, "r")
+    file = open(f"./data/mixed_data/{file_name}", "r")
     file_name = file_name.split(".")[0]
     print(f"Getting {file_name} datas...")
 
